@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+      <HTMLEditor fx:id="editor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="323.0" prefWidth="1081.0" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <AnchorPane fx:id="toolbar" prefHeight="32.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="publish" layoutX="1038.0" layoutY="4.0" mnemonicParsing="false" onAction="#publish" />
+            <ComboBox fx:id="category" layoutX="93.0" layoutY="4.0" prefWidth="150.0" promptText="Category">
+                    <items>
+                       <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Technology" />
+                          <String fx:value="Entertainment" />
+                          <String fx:value="Social" />
+                          <String fx:value="Auto" />
+                          <String fx:value="Travel" />
+                          <String fx:value="Others" />
+                       </FXCollections>
+                    </items>
+            </ComboBox>
+            <Button fx:id="open" layoutX="7.0" layoutY="3.0" mnemonicParsing="false" onAction="#LOADfile" />
+            <Button fx:id="save" layoutX="46.0" layoutY="3.0" mnemonicParsing="false" onAction="#save" />
+         </children></AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="73.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+         <children>
+            <fx:include source="player.fxml" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

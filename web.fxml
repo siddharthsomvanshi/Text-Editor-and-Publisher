@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="194.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.player">
+    <children>
+        <AnchorPane fx:id="player" layoutY="-3.0" prefHeight="186.0" prefWidth="514.0">
+            <children>
+                <Label fx:id="currenttime" layoutX="192.0" layoutY="169.0" text="0.00" />
+            </children></AnchorPane>
+        <Slider fx:id="seek" blockIncrement="1.0" layoutX="218.0" layoutY="167.0" max="0.0" prefHeight="14.0" prefWidth="132.0" />
+        <ImageView fx:id="playera" fitHeight="185.0" fitWidth="459.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@res/default.jpg" />
+            </image>
+        </ImageView>
+        <JFXSlider fx:id="volsli" indicatorPosition="RIGHT" layoutX="396.0" layoutY="152.0" prefHeight="42.0" prefWidth="107.0" />
+        <ImageView fx:id="albumart" fitHeight="132.0" fitWidth="155.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@res/default.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="name" layoutX="195.0" prefHeight="31.0" prefWidth="259.0" text="Label" />
+        <Label fx:id="artistn" layoutX="195.0" layoutY="28.0" prefHeight="31.0" prefWidth="259.0" text="Label" />
+        <Label fx:id="totaltime" layoutX="353.0" layoutY="165.0" text="0.00" />
+        <Button fx:id="previous" layoutX="232.0" layoutY="97.0" mnemonicParsing="false" onAction="#addMusic" text="" />
+        <Button fx:id="playpause" layoutX="289.0" layoutY="82.0" mnemonicParsing="false" onAction="#playpause" />
+        <Button fx:id="next" layoutX="369.0" layoutY="97.0" mnemonicParsing="false" onAction="#next" text="" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,150 @@
+@font-face {
+    -fx-font-family:seg;
+    -fx-src:url('/res/default.ttf');
+}
+/* player style */
+#player{
+    -fx-background-color: transparent;
+}
+#totaltime{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+}
+#currenttime{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+}
+#volumetxt{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+}
+#artistn{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: seg;
+    -fx-font-size: 20;
+    -fx-opacity:0.95;
+}
+#name{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: seg;
+    -fx-opacity:0.95;
+    -fx-font-size:25;
+}
+#volumetxt{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-family: seg;
+    -fx-font-size: 13;
+}
+#playpause{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/pause.png");
+    -fx-background-size: contain;
+    -fx-min-height: 65;
+    -fx-min-width: 70;
+
+}
+#previous{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/previous.png");
+    -fx-background-size: contain;
+    -fx-min-height: 45;
+    -fx-min-width: 48;
+
+
+}
+#next{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/next.png");
+    -fx-background-size: contain;
+    -fx-min-height: 45;
+    -fx-min-width: 48;
+}
+.slider .track{
+    -fx-background-color: white;
+    -fx-opacity: 0.3;
+}
+.slider .thumb{
+    -fx-background-color: white;
+    -fx-opacity: 1;
+}
+#hamburger{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/hamburger.png");
+    -fx-background-size: cover;
+}
+#hamburger:hover{
+    -fx-animated: true;
+    -fx-background-color: white;
+    -fx-opacity: 0.7;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
+#titleBar{
+    -fx-background-color: darkslategrey;
+}
+#title{
+    -fx-font-family: seg;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+}
+#closeBTN{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/close.png");
+    -fx-background-size: contain;
+}
+#loginback{
+    -fx-background-color: lightgray;
+    -fx-opacity: 0.9;
+}
+#rootpane{
+    -fx-background-image: url("res/background.jpg");
+    -fx-background-size: cover;
+}
+#loginBTN{
+    -fx-background-color: #45ee4d;
+}
+#info1{
+    -fx-font-family: seg;
+    -fx-font-size: 40;
+    -fx-text-fill: white;
+}
+#loginlabel{
+    -fx-text-fill: white;
+    -fx-font-family: seg;
+    -fx-font-size: 20;
+}
+#bottom{
+    -fx-background-color: darkslategrey;
+    -fx-opacity: 0.9;
+}
+#toolbar{
+    -fx-background-color: white;
+}
+#toolbarbrowser{
+    -fx-background-color: white;
+}
+#open{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/open.png");
+    -fx-background-size: cover;
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+}
+#save{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/save.png");
+    -fx-background-size: cover;
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+}
+#publish{
+    -fx-background-color: transparent;
+    -fx-background-image: url("res/send.png");
+    -fx-background-size: cover;
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+}
